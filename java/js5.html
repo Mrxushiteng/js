@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		#loginbox{
+			width: 300px;
+			height: 450px;
+			border: 1px solid green;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-top: -225px;
+			margin-left: -150px;
+			display:none;
+		
+
+		}
+		#close{
+			position:absolute;
+			font-size:28px;
+			top: 0;
+			right: 8px;
+			cursor:pointer;
+		}
+	</style>
+</head>
+<body>
+	<a href="javascript:void(0);" id="login">登录</a>
+	<div id="loginbox">
+		<span id="close">&times;</span>
+</div>
+<script>
+	var login=document.getElementById('login');
+	var loginbox=document.getElementById('loginbox');
+	var close=document.getElementById('close');
+	 login.onclick=function () {
+	 	loginbox.style.display='block';
+	 }
+	 close.onclick=function () {
+	 	loginbox.style.display='none';
+	 }
+</script>
+</body>
+</html>

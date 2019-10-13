@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		#a{
+			border:1px solid red;
+			width: 160px;
+			padding:5px;
+			border-radius:10px;
+			cursor:pointer;
+		}
+		#b{
+			margin-top: 10px;
+			border:1px solid;
+			padding: 10px;
+			border-radius:10px;
+			display:none;
+
+		}
+	</style>
+</head>
+<body>
+	<div id="a">点击一次出现.2次隐藏</div>
+	<div id="b">点击之后的隐藏信息点击之后的隐藏信息点击之后的隐藏信息点击之后的隐藏信息点击之后的隐藏信息点击之后的隐藏信息点击之后的隐藏信息点击之后的隐藏信息点击之后的隐藏信息点击之后的隐藏信息点击之后的隐藏信息点击之后的隐藏信息点击之后的隐藏信息</div>
+	<script>
+		var a=document.getElementById('a');
+		var b=document.getElementById('b');
+		// a.onclick=function () {
+		// 	b.style.display='block';
+		// }
+		// 点击a，如果b是隐藏的就让b显示，否则就让b隐藏
+		// a.onclick=function () {
+		// 	if(b.style.display=='none'){
+		// 		b.style.display='block';
+		// 	}else{
+		// 		b.style.display='none';
+		// 	}
+		// }
+		// 点击a，如果b是显示的，就让b隐藏，否则就让b显示
+		a.onclick=function () {
+			if(b.style.display=='block'){
+				b.style.display='none';
+			}else{
+				b.style.display='block';
+			}
+		}
+	</script>
+</body>
+</html>

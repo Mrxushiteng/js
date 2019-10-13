@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.a{
+			width: 300px;
+			opacity:1;
+		}
+		.b{
+			width: 192px;
+			opacity:.5;
+		}
+img{
+	cursor:pointer;
+	transition:3s;
+}
+	</style>
+}
+</head>
+<body>
+<img src="images/1.jpg" alt="1" id="a" class="a">
+<img src="images/2.jpg" alt="2" id="b" class="b">
+	<script>
+var a=document.getElementById('a');
+var b=document.getElementById('b');
+a.onclick=function () {
+	a.className='a';
+	b.className='b';
+}
+b.onclick=function () {
+	a.className='b';
+	b.className='a';
+}
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		#a{
+			border:1px solid red;
+			width: 160px;
+			padding:5px;
+			border-radius:10px;
+			cursor:pointer;
+		}
+		#b{
+			margin-top: 10px;
+			border:1px solid;
+			padding: 10px;
+			border-radius:10px;
+			display:none;
+		}
+	</style>
+</head>
+<body>
+	<div id="a">点击此处显示隐藏内容</div>
+	<div id="b">点击之后的隐藏信息点击之后的隐藏信息点击之后的隐藏信息点击之后的隐藏信息点击之后的隐藏信息点击之后的隐藏信息点击之后的隐藏信息点击之后的隐藏信息点击之后的隐藏信息点击之后的隐藏信息点击之后的隐藏信息点击之后的隐藏信息点击之后的隐藏信息</div>
+	<script>
+		// 1.获取操作的页面元素，并且保存到一个标识符（变量）中获取id为a的元素，保存到名称为a的变量中
+		var a=document.getElementById('a');
+		// 获取id为b的元素，保存到名称为b的变量中
+		var b=document.getElementById('b');
+		//点击a的时候，让b显示在页面上
+		a.onmouseover=function () {
+			b.style.display='block';//将b的样式中的display属性值 设置为block
+		}
+		a.onmouseout=function () {
+      b.style.display='none';
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	#small {
+		height: 100px;
+	}
+		#small img{
+			float:left;
+			width: 108px;
+			height: 100px;
+			box-sizing:border-box;
+
+		}
+		img{
+			cursor:pointer;
+		}
+		.act{
+			border:2px solid red;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<div id="show"></div>
+		<div id="big">
+			<img src="images/a1.jpg" alt="a1" id="a">
+		</div>
+		<div id="small">
+			<img src="images/a1.jpg" alt="01" id="s1" class="act">
+			<img src="images/a2.jpg" alt="02" id="s2">
+			<img src="images/a3.jpg" alt="03" id="s3">
+			<img src="images/a4.jpg" alt="04" id="s4">
+		</div>
+		
+	</div>
+	<script>
+		var a=document.getElementById('a');
+		var s1=document.getElementById('s1');
+		var s2=document.getElementById('s2');
+		var s3=document.getElementById('s3');
+		var s4=document.getElementById('s4');
+		s1.onmouseover=function () {
+			a.src=this.src;
+			this.className='act';
+			s2.className='';
+			s3.className='';
+			s4.className='';
+		}
+		s2.onmouseover=function () {
+			a.src=this.src;
+			this.className='act';
+			s1.className='';
+			s3.className='';
+			s4.className='';
+		}
+		s3.onmouseover=function () {
+			a.src=this.src;
+			this.className='act';
+			s1.className='';
+			s2.className='';
+			s4.className='';
+		}
+		s4.onmouseover=function () {
+			a.src=this.src;
+			this.className='act';
+			s1.className='';
+			s2.className='';
+			s3.className='';
+		}
+
+	</script>
+</body>
+</html>
